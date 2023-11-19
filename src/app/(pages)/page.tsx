@@ -12,6 +12,7 @@ import {
   TypeScriptIcon,
   VueIcon,
 } from "@/ui/icons";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -39,14 +40,17 @@ export default function Home() {
             </div>
 
             <div>
-              <h1 className={`${raleway.className} font-extrabold text-7xl title fade-title`} data-text='ALVARO RODRIGUEZ'>
+              <h1
+                className={`${raleway.className} font-extrabold text-7xl title fade-title`}
+                data-text="ALVARO RODRIGUEZ"
+              >
                 ALVARO RODRIGUEZ
               </h1>
             </div>
 
             <div className="pt-10">
               <button className="border-2 text-white border-indigo-600 rounded-full py-2 px-3 transition-all duration-200 opacity-0 fade-in hover:bg-indigo-600 hover:scale-105">
-                Descarga mi cv
+                Descargar cv
               </button>
             </div>
           </div>
@@ -60,15 +64,64 @@ export default function Home() {
       </section>
 
       <section className="min-h-[900px]">
-        <div className="h-[700px] mt-16 max-w-6xl w-full mx-auto text-white">
-          <header className="pt-28">
-            <h2 className="text-4xl font-semibold text-center">Proyectos Destacados</h2>
+        <div className="flex flex-col gap-16 mt-16 max-w-6xl w-full mx-auto text-white px-4 xl:px-1">
+          <header className="pt-20 flex items-center gap-4">
+            <div className="bg-white h-3 w-3 rounded-full shadow"></div>
+            <h2
+              className={`${raleway.className} text-xl font-bold text-neutral-100`}
+            >
+              PROYECTOS DESTACADOS
+            </h2>
           </header>
+
+          <article className="relative flex border-2 border-[#393939] bg-[#151515] h-[600px] rounded-xl max-w-[1030px]">
+            <div className="flex flex-col pt-14 pl-16">
+              <h3
+                className={`${raleway.className} text-4xl font-extrabold pb-8`}
+              >
+                CLINICONNECT
+              </h3>
+              <p className="text-neutral-200 pb-8">
+                Aplicacion web que te permite reservar y monitorear tus citas
+                medicas de manera sencilla y eficiente.
+              </p>
+              <ul className="flex gap-2 flex-wrap [&>li]:bg-indigo-600 [&>li]:px-1.5 [&>li]:rounded-md [&>li]:py-0.5">
+                <li>React</li>
+                <li>NextJs</li>
+                <li>Express</li>
+                <li>MySql</li>
+                <li>Sequelize</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+
+            <div className="relative flex flex-grow justify-end py-[23px]">
+              <div className="bg-indigo-600 h-full w-[550px] rounded-xl translate-x-28">
+                <div className="relative h-[520px] w-[520px] rounded-xl ml-[15px] mt-[15px]">
+                  <Image
+                    src="/cliniconnect-mockup.png"
+                    alt=""
+                    fill
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
       <section className="min-h-[900px]">
-        <div className="py-16 text-white max-w-6xl mx-auto w-full flex flex-col">
+        <div className="py-16 text-white max-w-6xl mx-auto w-full flex flex-col gap-20 px-4 xl:px-0">
+          <header className="pt-20 flex items-center gap-4">
+            <div className="bg-white h-3 w-3 rounded-full shadow"></div>
+            <h2
+              className={`${raleway.className} text-xl md:text-2xl font-extrabold text-neutral-100`}
+            >
+              MIS HABILIDADES
+            </h2>
+          </header>
+
           <div className="flex flex-nowrap overflow-hidden scroller">
             <ul className="flex gap-16 w-fit scroller-inner">
               <li className="flex flex-col justify-center items-center">

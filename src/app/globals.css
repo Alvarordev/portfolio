@@ -200,7 +200,7 @@
   color: #121212;
   -webkit-text-stroke: 0vw #393939;
   overflow: hidden;
-  animation: fill-title 1.4s ease-in-out forwards 650ms;
+  animation: fill-title 1.4s ease-in-out forwards 700ms;
 }
 
 @keyframes fill-title {
@@ -215,7 +215,7 @@
 
 .fade-title {
   opacity: 0;
-  animation: fade-title 500ms ease-in forwards;
+  animation: fade-title 450ms ease-in forwards;
 }
 
 @keyframes fade-title {
@@ -223,3 +223,8 @@
     opacity: 100%;
   }
 }
+
+.shadow {
+  box-shadow: 0 0 20px #fff
+}
+

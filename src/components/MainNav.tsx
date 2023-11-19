@@ -13,12 +13,12 @@ const MainNav = () => {
       active: pathname === "/",
     },
     {
-      title: "Projects",
+      title: "Proyectos",
       path: "/projects",
       active: pathname === "/projects",
     },
     {
-      title: "About",
+      title: "Sobre mi",
       path: "/about",
       active: pathname === "/about",
     },
