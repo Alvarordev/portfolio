@@ -21,6 +21,10 @@
   }
 }
 
+body {
+  background-color: #121212;
+}
+
 .bg {
   background: radial-gradient(
       84% 84% at -20% -20%,
@@ -228,3 +232,16 @@
   box-shadow: 0 0 20px #fff
 }
 
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}

@@ -74,8 +74,14 @@ export default function Home() {
             </h2>
           </header>
 
-          <article className="relative flex border-2 border-[#393939] bg-[#151515] h-[600px] rounded-xl max-w-[1030px]">
-            <div className="flex flex-col pt-14 pl-16">
+          <article className="relative flex border-4 border-[#393939] bg-[#151515] h-[600px] rounded-xl max-w-[1080px]">
+            <div className="flex flex-col pt-10 pl-16">
+              <div className="flex w-full gap-4 pb-10">
+                <span className="w-full h-1 bg-indigo-600 rounded-lg" />
+                <span className="w-full h-1 bg-white rounded-lg" />
+                <span className="w-full h-1 bg-white rounded-lg" />
+              </div>
+
               <h3
                 className={`${raleway.className} text-4xl font-extrabold pb-8`}
               >
@@ -96,8 +102,9 @@ export default function Home() {
             </div>
 
             <div className="relative flex flex-grow justify-end py-[23px]">
-              <div className="bg-indigo-600 h-full w-[550px] rounded-xl translate-x-28">
-                <div className="relative h-[520px] w-[520px] rounded-xl ml-[15px] mt-[15px]">
+              <div className="absolute top-0 right-48 h-full w-1 bg-[#393939] "></div>
+              <div className="bg-indigo-600 h-full w-[550px] rounded-xl translate-x-16">
+                <div className="relative h-[515px] w-[520px] rounded-xl ml-[15px] mt-[16px]">
                   <Image
                     src="/cliniconnect-mockup.png"
                     alt=""
