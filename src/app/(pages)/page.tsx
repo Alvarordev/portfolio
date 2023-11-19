@@ -1,3 +1,4 @@
+import ProjectsCard from "@/components/ProjectsCard";
 import { raleway } from "@/ui/fonts";
 import {
   ExpressIcon,
@@ -12,7 +13,6 @@ import {
   TypeScriptIcon,
   VueIcon,
 } from "@/ui/icons";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -74,47 +74,7 @@ export default function Home() {
             </h2>
           </header>
 
-          <article className="relative flex border-4 border-[#393939] bg-[#151515] h-[600px] rounded-xl max-w-[1080px]">
-            <div className="flex flex-col pt-10 pl-16">
-              <div className="flex w-full gap-4 pb-10">
-                <span className="w-full h-1 bg-indigo-600 rounded-lg" />
-                <span className="w-full h-1 bg-white rounded-lg" />
-                <span className="w-full h-1 bg-white rounded-lg" />
-              </div>
-
-              <h3
-                className={`${raleway.className} text-4xl font-extrabold pb-8`}
-              >
-                CLINICONNECT
-              </h3>
-              <p className="text-neutral-200 pb-8">
-                Aplicacion web que te permite reservar y monitorear tus citas
-                medicas de manera sencilla y eficiente.
-              </p>
-              <ul className="flex gap-2 flex-wrap [&>li]:bg-indigo-600 [&>li]:px-1.5 [&>li]:rounded-md [&>li]:py-0.5">
-                <li>React</li>
-                <li>NextJs</li>
-                <li>Express</li>
-                <li>MySql</li>
-                <li>Sequelize</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-
-            <div className="relative flex flex-grow justify-end py-[23px]">
-              <div className="absolute top-0 right-48 h-full w-1 bg-[#393939] "></div>
-              <div className="bg-indigo-600 h-full w-[550px] rounded-xl translate-x-16">
-                <div className="relative h-[515px] w-[520px] rounded-xl ml-[15px] mt-[16px]">
-                  <Image
-                    src="/cliniconnect-mockup.png"
-                    alt=""
-                    fill
-                    className="rounded-lg"
-                  />
-                </div>
-              </div>
-            </div>
-          </article>
+          <ProjectsCard/>
         </div>
       </section>
 
