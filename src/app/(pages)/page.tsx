@@ -30,7 +30,7 @@ export default function Home() {
         <div className="h-28" />
 
         <div className="flex-grow flex flex-col">
-          <div className="flex-grow max-w-6xl w-full mx-auto flex flex-col justify-center items-center">
+          <div className={`${raleway.className} flex-grow max-w-6xl w-full mx-auto flex flex-col justify-center items-center`}>
             <div className="mb-8 flex justify-center items-center gap-3 pt-10">
               <span className="h-[1px] w-0 bg-white line-animation"></span>
               <span className="text-xl opacity-0 fade-in">
@@ -41,7 +41,7 @@ export default function Home() {
 
             <div>
               <h1
-                className={`${raleway.className} font-extrabold text-7xl title fade-title`}
+                className='font-black text-7xl title fade-title'
                 data-text="ALVARO RODRIGUEZ"
               >
                 ALVARO RODRIGUEZ
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="min-h-[900px]">
+      <section>
         <div className="flex flex-col gap-16 mt-16 max-w-6xl w-full mx-auto text-white px-4 xl:px-1">
           <header className="pt-20 flex items-center gap-4">
             <div className="bg-white h-3 w-3 rounded-full shadow"></div>
