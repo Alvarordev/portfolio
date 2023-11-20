@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { montserrat, poppins } from '@/ui/fonts'
 import './globals.css'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${montserrat.className} flex flex-col min-h-screen`}>
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )

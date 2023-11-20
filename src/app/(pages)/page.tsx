@@ -1,3 +1,4 @@
+import Canvas from "@/components/Canvas";
 import ProjectsCard from "@/components/ProjectsCard";
 import { raleway } from "@/ui/fonts";
 import {
@@ -27,12 +28,14 @@ export default function Home() {
         <span />
       </div>
 
-      <section className="flex flex-col min-h-screen text-white relative ">
+      <section className="flex flex-col min-h-screen text-white relative z-0 max-w-6xl w-full mx-auto">
         <div className="h-28" />
+
+        <Canvas />
 
         <div className="flex-grow flex flex-col">
           <div
-            className={`${raleway.className} flex-grow max-w-6xl w-full mx-auto flex flex-col justify-center items-center`}
+            className={`${raleway.className} flex-grow flex flex-col justify-center items-center`}
           >
             <div className="mb-8 flex justify-center items-center gap-3 pt-10">
               <span className="h-[1px] w-0 bg-white line-animation"></span>
@@ -66,8 +69,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="flex flex-col gap-16 mt-16 max-w-6xl w-full mx-auto text-white px-4 xl:px-1">
+      <section className="relative z-10  max-w-6xl w-full mx-auto text-white ">
+
+        <div className="flex flex-col gap-16 mt-16  px-4 xl:px-1">
           <header className="pt-20 flex items-center gap-4">
             <div className="bg-white h-3 w-3 rounded-full shadow"></div>
             <h2
@@ -179,7 +183,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col max-w-6xl mx-auto text-white px-4 xl:px-0">
+      <section className="flex flex-col max-w-6xl mx-auto text-white px-4 xl:px-0 relative z-10">
         <header className="pt-32 flex items-center gap-4">
           <div className="bg-white h-3 w-3 rounded-full shadow"></div>
           <h2
@@ -211,7 +215,7 @@ export default function Home() {
               >
                 Alvaro Rodríguez
               </h3>
-             
+
               <ul className="flex justify-between md:justify-start gap-1 md:gap-5 py-4">
                 <li className="px-2 md:px-3 py-1 border-2 text-sm border-indigo-600 rounded-3xl">
                   FullStack Developer
@@ -243,6 +247,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="min-h-[600px]"></section>
     </main>
   );
 }
