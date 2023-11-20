@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const MainNav = () => {
@@ -14,12 +13,12 @@ const MainNav = () => {
     },
     {
       title: "Proyectos",
-      path: "/projects",
+      path: "#projects",
       active: pathname === "/projects",
     },
     {
       title: "Sobre mi",
-      path: "/about",
+      path: "#about",
       active: pathname === "/about",
     },
   ];
@@ -28,14 +27,14 @@ const MainNav = () => {
     <ul className="flex gap-8">
       {routes.map(({ title, path, active }) => (
         <li key={title}>
-          <Link
+          <a
             href={path}
             className={`${
               active ? "text-indigo-600" : ""
             } hover:text-indigo-600 transition-all duration-150 font-medium`}
           >
             {title}
-          </Link>
+          </a>
         </li>
       ))}
     </ul>

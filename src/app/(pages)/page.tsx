@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-10  max-w-6xl w-full mx-auto text-white ">
+      <section id="projects" className="relative z-10  max-w-6xl w-full mx-auto text-white ">
 
         <div className="flex flex-col gap-16 mt-16  px-4 xl:px-1">
           <header className="pt-20 flex items-center gap-4">
@@ -183,8 +183,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col max-w-6xl mx-auto text-white px-4 xl:px-0 relative z-10">
-        <header className="pt-32 flex items-center gap-4">
+      <section id="about" className="flex flex-col max-w-6xl mx-auto text-white px-4 xl:px-0 relative z-10 pt-20">
+        <header className="flex items-center gap-4">
           <div className="bg-white h-3 w-3 rounded-full shadow"></div>
           <h2
             className={`${raleway.className} text-xl font-bold text-neutral-100`}
