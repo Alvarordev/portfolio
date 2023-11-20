@@ -15,6 +15,6 @@ export const works = [
         title: 'Panel de Control',
         description: 'Dashboard que te permite visualizar las incidencias en un mapa en tiempo real, ademas de poder interactuar con el mapa, crear nuevas incidencias y cambiar el estado de las mismas.',
         stack: ['VueJS', 'CSS', 'Socket.io', 'NestJs', 'PostgreSql' ,'Leaflet', 'Howler'],
-        img: '/cliniconnect-mockup.png'
+        img: '/dashboard-mockup.png'
     }
 ]

@@ -171,6 +171,22 @@ body {
     width: 120px;
     opacity: 1;
   }
+
+}
+
+@media (max-width: 768px) {
+  @keyframes line-fade {
+    0% {
+      width: 0px;
+      opacity: 1;
+    }
+  
+    100% {
+      width: 80px;
+      opacity: 1;
+    }
+  
+  }
 }
 
 .scroller {
@@ -189,7 +205,6 @@ body {
 }
 
 .title {
-  position: relative;
   color: #121212;
   -webkit-text-stroke: 0.1vw #393939;
 }
